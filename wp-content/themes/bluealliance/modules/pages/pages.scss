@@ -1,0 +1,85 @@
+@import '../../src/scss/components/vars';
+
+.pages-section {
+  padding: 70px 0 98px;
+
+  @media (max-width: $md) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 40px 0;
+  }
+
+  .section-holder {
+    display: flex;
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+    }
+  }
+
+  .left-col, .right-col {
+    width: 100%;
+  }
+
+  .left-col {
+    margin-left: 4px;
+    margin-right: 22px;
+
+    @media (max-width: $lg) {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+
+  .right-col {
+    @media (max-width: $lg) {
+      margin-top: 40px;
+    }
+  }
+
+  h3 {
+    color: $bluealliance-darker;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    font-size: 18px;
+    line-height: 28px;
+
+    @media (max-width: $sm) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .primary-btn {
+    margin-top: 29px;
+    min-width: 171px;
+
+    @media (max-width: $lg) {
+      margin-top: 20px;
+    }
+
+    @media (max-width: $sm) {
+      min-width: 0;
+    }
+  }
+}
+
+.home .pages-section {
+  padding: 106px 0 137px;
+
+  @media (max-width: $lg) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $md) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 40px 0;
+  }
+}

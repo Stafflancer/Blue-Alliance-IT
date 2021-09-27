@@ -1,0 +1,93 @@
+@import '../../src/scss/components/vars';
+
+.get-in-touch {
+  background: linear-gradient(0deg, rgb(5, 107, 161), rgb(0, 166, 209));
+  padding: 100px 0 90px;
+  color: $white;
+
+  @media (max-width: $lg) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $md) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 40px 0;
+  }
+
+  .section-holder {
+    display: flex;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+    }
+
+    .content, .form {
+      width: 100%;
+    }
+
+    .content {
+      padding-left: 37px;
+      max-width: 500px;
+
+      @media (max-width: $lg) {
+        padding-left: 0;
+      }
+
+      @media (max-width: $md) {
+        max-width: 100%;
+      }
+
+      h2 {
+        margin-bottom: 6px;
+      }
+
+      .text {
+        font-size: 18px;
+        line-height: 28px;
+
+        @media (max-width: $sm) {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+
+    .form {
+      max-width: 520px;
+      margin-left: 42px;
+      margin-top: 11px;
+
+      @media (max-width: $md) {
+        margin-left: 0;
+        margin-top: 40px;
+        max-width: 100%;
+      }
+
+      @media (max-width: $sm) {
+        margin-top: 30px;
+      }
+
+      .gform_footer {
+        padding-top: 25px !important;
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: $sm) {
+          padding-top: 15px !important;
+        }
+
+        input[type="submit"] {
+          margin-left: auto !important;
+          min-width: 200px;
+
+          @media (max-width: $sm) {
+            min-width: 0;
+          }
+        }
+      }
+    }
+  }
+}

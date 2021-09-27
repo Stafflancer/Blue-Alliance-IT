@@ -1,0 +1,324 @@
+@import '../../src/scss/components/vars';
+
+.faq-section {
+  padding: 65px 0 150px;
+  position: relative;
+
+  @media (max-width: $xl) {
+    padding: 65px 0 120px;
+  }
+
+  @media (max-width: $lg) {
+    padding: 60px 0 80px;
+  }
+
+  @media (max-width: $md) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 40px 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    z-index: -1;
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(218, 232, 241));
+  }
+
+  .section-holder {
+    padding-left: 6px;
+    position: relative;
+
+    @media (max-width: $xl) {
+      padding-left: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -207px;
+      right: -156px;
+      width: 616px;
+      height: 616px;
+      background-image: url("../../../img/element.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @media (max-width: $md) {
+        width: 400px;
+        height: 400px;
+        top: -140px;
+        right: -100px;
+      }
+
+      @media (max-width: $sm) {
+        width: 300px;
+        height: 300px;
+        top: -100px;
+        right: -80px;
+      }
+    }
+  }
+
+  .content-holder {
+    max-width: 700px;
+
+    h5 {
+      margin: 0 0 34px 0;
+      color: $bluealliance-darker;
+
+      @media (max-width: $md) {
+        margin: 0 0 30px 0;
+      }
+
+      @media (max-width: $sm) {
+        margin: 0 0 25px 0;
+      }
+    }
+
+    h3 {
+      margin: 0 0 10px 0;
+      color: $bluealliance-darker;
+      font-size: 40px;
+      line-height: 50px;
+
+      @media (max-width: $lg) {
+        font-size: 35px;
+        line-height: 45px;
+      }
+
+      @media (max-width: $md) {
+        font-size: 26px;
+        line-height: 34px;
+      }
+
+      @media (max-width: $lg) {
+        font-size: 26px;
+        line-height: 36px;
+      }
+
+      @media (max-width: $md) {
+        font-size: 24px;
+        line-height: 34px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 28px;
+      color: $pantone;
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: $bluealliance-darker;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .questions {
+    margin-top: 55px;
+    padding-left: 7px;
+    max-width: 1055px;
+
+    @media (max-width: $xl) {
+      padding-left: 0;
+    }
+
+    @media (max-width: $sm) {
+      margin-top: 40px;
+    }
+
+    .question {
+      border-bottom: 1px solid $pantone;
+
+      &:first-of-type {
+        padding-bottom: 50px;
+
+        @media (max-width: $lg) {
+          padding-bottom: 40px;
+        }
+
+        @media (max-width: $md) {
+          padding-bottom: 30px;
+        }
+
+        @media (max-width: $sm) {
+          padding-bottom: 20px;
+        }
+      }
+
+      &:not(:first-of-type) {
+        padding: 50px 0;
+
+        @media (max-width: $lg) {
+          padding: 40px 0;
+        }
+
+        @media (max-width: $md) {
+          padding: 30px 0;
+        }
+
+        @media (max-width: $sm) {
+          padding: 20px 0;
+        }
+      }
+
+      .q {
+        font-size: 26px;
+        line-height: 36px;
+        color: $bluealliance-darker;
+        font-weight: 700;
+        position: relative;
+        padding-left: 65px;
+        margin-bottom: 10px;
+        max-width: 910px;
+        transition: color $delay;
+
+        @media (max-width: $md) {
+          padding-left: 50px;
+        }
+
+        @media (max-width: $sm) {
+          padding-left: 40px;
+        }
+
+        span {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 37px;
+          height: 37px;
+          border-radius: 50%;
+          border: 1px solid $bluealliance-darker;
+          transition: border-color $delay;
+
+          @media (max-width: $md) {
+            width: 33px;
+            height: 33px;
+          }
+
+          @media (max-width: $sm) {
+            width: 26px;
+            height: 26px;
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 17px;
+            left: 7px;
+            height: 1px;
+            width: 20px;
+            background: $bluealliance-darker;
+            transition: background $delay;
+
+            @media (max-width: $md) {
+              width: 23px;
+              top: 15px;
+              left: 4px;
+            }
+
+            @media (max-width: $sm) {
+              width: 16px;
+              top: 11px;
+            }
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            background: red;
+            left: 17px;
+            top: 7px;
+            background: $bluealliance-darker;
+            transition: transform 0.1s, background $delay;
+
+            @media (max-width: $md) {
+              height: 23px;
+              left: 15px;
+              top: 4px;
+            }
+
+            @media (max-width: $sm) {
+              height: 16px;
+              left: 12px;
+            }
+          }
+        }
+
+        &.opened {
+          color: $thisblue;
+
+          span {
+            border-color: $thisblue;
+
+            &::before, &::after {
+              background: $thisblue;
+            }
+          }
+
+          span::after {
+            transform: rotate(-90deg);
+          }
+        }
+
+        @media (max-width: $md) {
+          font-size: 24px;
+          line-height: 34px;
+        }
+
+        @media (max-width: $sm) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+
+      .a {
+        display: none;
+        padding-left: 65px;
+        font-size: 18px;
+        line-height: 28px;
+        color: $pantone;
+        padding-bottom: 25px;
+
+        @media (max-width: $md) {
+          padding-left: 50px;
+          padding-bottom: 0;
+        }
+
+        @media (max-width: $sm) {
+          font-size: 16px;
+          line-height: 26px;
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}

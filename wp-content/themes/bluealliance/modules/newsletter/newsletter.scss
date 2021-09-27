@@ -1,0 +1,146 @@
+@import '../../src/scss/components/vars';
+
+.newsletter-section {
+  padding: 75px 0 95px;
+  background-color: rgb(8,51,99);
+
+  @media (max-width: $md) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 40px 0;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: $white;
+    max-width: 900px;
+    margin: 0 auto 29px;
+
+    @media (max-width: $lg) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+
+    @media (max-width: $md) {
+      font-size: 26px;
+      line-height: 34px;
+    }
+
+  }
+
+  form {
+    max-width: 648px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width: $md) {
+      text-align: center;
+    }
+
+    input[type="text"], input[type="email"] {
+      height: 46px;
+      border-radius: 12px;
+      padding: 0 26px !important;
+      font-size: 18px !important;
+      color: $pantone;
+
+      @media (max-width: $md) {
+        padding: 0 20px !important;
+      }
+
+      @media (max-width: $sm) {
+        padding: 0 15px !important;
+        font-size: 16px !important;
+      }
+
+      &::placeholder {
+        color: $pantone;
+      }
+    }
+
+    input[type="submit"] {
+      position: absolute;
+      top: 0;
+      right: -30px;
+      min-width: 163px;
+      background-color: $blue;
+      border-color: $blue;
+      height: 46px;
+      font-size: 16px;
+
+      @media (max-width: $md) {
+        position: static;
+        min-width: 0;
+      }
+
+      &:hover {
+        color: $blue;
+        background-color: $white;
+      }
+    }
+
+    .gchoice {
+      color: $white;
+      font-size: 17px;
+      padding-left: 25px;
+
+      @media (max-width: $md) {
+        padding-left: 0;
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: $white;
+        text-decoration: underline;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+
+    input[type="checkbox"] {
+      position: relative;
+      cursor: pointer;
+      margin-right: 5px;
+      display: inline-block;
+      margin-bottom: -2px;
+
+      &:checked::after {
+        opacity: 1;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: auto;
+        bottom: 0;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $white;
+        background-color: rgb(8,51,99);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        bottom: 0;
+        width: 10px;
+        height: 10px;
+        background-color: $white;
+        opacity: 0;
+        transition: opacity $delay;
+      }
+    }
+  }
+}

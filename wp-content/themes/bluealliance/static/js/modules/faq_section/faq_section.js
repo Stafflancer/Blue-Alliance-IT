@@ -1,0 +1,1 @@
+!function(e){e(document).on("ready",(function(){var n=e(".faq-section");if(n.length){var i=n.find(".question");if(i.length){var o=i.find(".q"),s=i.find(".a");o.length&&s.length&&o.on("click",(function(){var n=e(this),i=n.next();i.is(":visible")?(n.removeClass("opened"),i.slideUp(120)):(o.removeClass("opened"),s.slideUp(120),n.addClass("opened"),i.slideDown(120))}))}}}))}(jQuery);
