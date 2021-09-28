@@ -67,13 +67,16 @@
       .icon {
         max-width: 117px;
         margin: 0 auto;
+        height: 100px;
 
         @media (max-width: $lg) {
           max-width: 90px;
+          height: 90px;
         }
 
         @media (max-width: $md) {
           max-width: 80px;
+          height: auto;
         }
 
         @media (max-width: $sm) {

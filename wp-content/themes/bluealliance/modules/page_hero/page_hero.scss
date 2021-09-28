@@ -78,23 +78,26 @@
   }
 
   h3 {
-    font-size: 40px;
-    line-height: 50px;
     color: $bluealliance-darker;
 
-    @media (max-width: $lg) {
-      font-size: 34px;
-      line-height: 44px;
-    }
+    &:first-child {
+      font-size: 40px;
+      line-height: 50px;
 
-    @media (max-width: $md) {
-      font-size: 30px;
-      line-height: 40px;
-    }
+      @media (max-width: $lg) {
+        font-size: 34px;
+        line-height: 44px;
+      }
 
-    @media (max-width: $sm) {
-      font-size: 26px;
-      line-height: 36px;
+      @media (max-width: $md) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 26px;
+        line-height: 36px;
+      }
     }
   }
 
